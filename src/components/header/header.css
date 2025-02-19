@@ -1,0 +1,56 @@
+.top-bar {
+    background-color: #102a43; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+.whatsapp {
+    color: #25d366; 
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu-bar {
+    background-color: #f8c102; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+}
+.menu ul{
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    align-self: center;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 20px;
+    background-color: #ffcc00;
+    color: white;
+    
+}
+.menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white; 
+    font-weight: bold;
+}
+.menu ul li a:hover {
+    color: #0011ff; 
+    transform: scale(1.1); 
+    
+}
+.logo {
+    width: 200px;
+    height: 130px;
+    background: none; 
+    position: relative;
+    align-items: left;
+    border-radius: 45%;
+    margin-right: 20px; 
+}
+
+
+
+
