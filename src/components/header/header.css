@@ -1,5 +1,5 @@
 .top-bar {
-    background-color: #102a43; 
+    background-color: #5595a0; 
     color: white;
     display: flex;
     justify-content: space-between;
@@ -7,16 +7,16 @@
     font-size: 14px;
 }
 .whatsapp {
-    color: #25d366; 
+    color: white; 
     text-decoration: none;
     font-weight: bold;
 }
 .menu-bar {
-    background-color: #f8c102; 
+    background-color: #e8fafe; 
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    padding: 20px;
+    padding: 5px 20px;
 }
 .menu ul{
     display: flex;
@@ -25,31 +25,102 @@
     align-self: center;
     align-items: center;
     gap: 20px;
-    padding: 60px 20px;
-    background-color: #ffcc00;
+    padding: 5px;
+    background-color: #e8fafe;
     color: white;
     
 }
 .menu ul li a {
     text-decoration: none;
     font-size: 18px;
-    color: white; 
+    color: #5595a0; 
     font-weight: bold;
 }
 .menu ul li a:hover {
-    color: #0011ff; 
+    color: black; 
     transform: scale(1.1); 
     
 }
 .logo {
-    width: 200px;
-    height: 130px;
+    width: 280px;
+    height: 170px;
     background: none; 
     position: relative;
     align-items: left;
-    border-radius: 45%;
-    margin-right: 20px; 
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
 }
+
+/* MENU CATEGORIAS COM ÍCONES */
+.category-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #284b7b;
+    padding: 20px 0;
+  }
+  
+  .category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .category-item:hover {
+    transform: scale(1.1);
+  }
+  
+  .category-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+  }
+  
+  /* BANNERS */
+  .banner-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .banner-item {
+    width: 300px;
+    text-align: center;
+  }
+  
+  .slideshow {
+    position: relative;
+  }
+  
+  .slideshow-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+  
+  .prev-btn { left: 5px; }
+  .next-btn { right: 5px; }
+  
 
 
 

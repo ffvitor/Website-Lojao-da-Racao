@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./header.css";
-import logo from "../../assets/logo/logoLojao.jpeg";
+import logo from "../../assets/logo/logoLojao.png";
+import { FaWhatsapp } from "react-icons/fa";
 
 
 
@@ -19,13 +20,13 @@ export default function Header() {
                     rel="noopener noreferrer"
                     className="whatsapp"
                 >
-                    📱 (85) 98739-2707
+                     <FaWhatsapp size={20} color="#25D366" /> (85) 98739-2707
                 </a>
             </div>
 
             {/* Área do menu e da logo */}
             <div className="menu-bar">
-                <img src={logo} alt="Logo" className="logo" />
+                <img src={logo} alt="Logo da Empresa" className="logo" />
                 <nav className="menu">
                     <ul>
                         <li><a href="home.html">HOME</a></li>

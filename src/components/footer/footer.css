@@ -1,0 +1,122 @@
+.footer {
+    background: #5595a0;
+    color: #fff;
+    padding: 30px 20px;
+    font-size: 14px;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    text-align: left;
+  }
+  
+  .footer-section h3 {
+    color: #FFD700;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  .payment-icons {
+    width: 100px;
+    margin-top: 5px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid #666;
+    padding-top: 10px;
+    font-size: 12px;
+  }
+  
+  .whatsapp-button {
+    position: fixed;
+    bottom: 60px; /* Ajuste para ficar logo acima do botão TOPO */
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 32px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    z-index: 1000; /* Mantém acima do botão TOPO */
+  }
+  
+  .top-button {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background-color: yellow;
+    color: black;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999; 
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #1ebe5d;
+  }
+  
+  .top-button:hover {
+    background-color: #f1c40f;
+  }
+  
+  .payment-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .payment-icon {
+    font-size: 28px;
+    color: #fff;
+  }
+  
+  .payment-icon.visa {
+    color: white;
+  }
+  
+  .payment-icon.mastercard {
+    color: white;
+  } 
+  .payment-icon.pix {
+    color: #00B894;
+  }
+  

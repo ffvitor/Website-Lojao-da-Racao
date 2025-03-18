@@ -1,0 +1,35 @@
+/* Seção "Sobre Nós" (Fundo Azul) */
+.sobre-nos {
+    background: #0D2C55; /* Fundo azul somente na seção "Sobre Nós" */
+    color: white;
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px; /* Espaço entre a parte das imagens e o "Sobre Nós" */
+}
+
+.sobre-nos-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sobre-nos-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sobre-nos-item {
+    width: 30%;
+    text-align: center;
+}
+
+.sobre-nos-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sobre-nos-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}

@@ -1,22 +1,164 @@
-.slideshow-container {
+/* Container principal do banner */
+.banner-container {
     display: flex;
-    justify-content: center; 
-    gap: 20px; 
-    margin-top: 10px;
-}
-.slideshow {
-    width: 400px; 
-    height: 400px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    border-radius: 10px; 
-    
+    flex-wrap: wrap;
+    padding: 20px;
+    background: white; /* Mantém o fundo branco para a área das imagens */
+    color: black;
 }
-.slideshow-image {
+
+/* Estilização dos itens do banner */
+.banner-item {
+    text-align: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Slideshow com fundo branco */
+.slideshow {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.5s ease-in-out;
+    max-width: 300px;
+    height: 200px;
+    position: relative;
+    background: white; /* Fundo branco */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ccc; /* Adiciona uma borda para melhor visualização */
 }
+
+/* Imagens do slideshow */
+.slideshow-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Mantém as proporções sem cortar a imagem */
+}
+
+/* Botões do slideshow */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+.prev-btn:hover, .next-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+/* MENU CATEGORIAS */
+.category-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #284b7b; /* Cor azul */
+    padding: 15px 0;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .category-item {
+    font-size: 12px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .category-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+  
+  /* MENU CATEGORIAS COM ÍCONES */
+.category-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #284b7b;
+  padding: 20px 0;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.category-item:hover {
+  transform: scale(1.1);
+}
+
+.category-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+}
+
+/* BANNERS */
+.banner-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.banner-item {
+  width: 300px;
+  text-align: center;
+}
+
+.slideshow {
+  position: relative;
+}
+
+.slideshow-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.prev-btn { left: 5px; }
+.next-btn { right: 5px; }
+
+
+
+
+
